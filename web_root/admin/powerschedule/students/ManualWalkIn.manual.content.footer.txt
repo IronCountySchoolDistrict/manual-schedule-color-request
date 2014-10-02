@@ -1,0 +1,45 @@
+<!-- TODO: Use CSS instead of &nbsp; HTML entities -->
+<script type="text/template" id="color-key-template">
+    <!--  Start of PVPA customization color key -->
+    <div id="color-key" style="margin-left:24px;">
+        <span style="background-color:#00f000">&nbsp;&nbsp;&nbsp</span> Primary <span style="background-color:#f0f000">&nbsp;&nbsp;&nbsp</span>
+        Elective <span style="background-color:#f00000">&nbsp;&nbsp;&nbsp</span> Alternate
+    </div>
+    <!--  End of PVPA customization color key -->
+</script>
+
+<!-- PS DATA -->
+<div id="ps-data"
+     data-ps='
+        {
+            "scheduleRequests": [
+                    ~[tlist_sql;
+                    SELECT
+                      sr.CourseNumber,
+                      sr.AlternateGroupCode,
+                      sr.AlternatePriority,
+                      sr.GlobalAlternateCourse
+                    FROM ScheduleRequests sr
+                    WHERE
+                      sr.YearID = ~[gpv:schedulerequestyearid] AND
+                      sr.StudentID = ~[gpv:id]
+                    ORDER BY sr.CourseNumber;
+                    ]
+                    {
+                        "course":"~(course;t)",
+                        "type":"~(groupcode;t)",
+                        "priority":"~(priority;n)",
+                        "alternate":"~(alt;n)"
+                    },
+                    [/tlist_sql]{}
+            ],
+            "student": "~[gpv:id]",
+            "year": "~[gpv:schedulerequestyearid]"
+        }
+    '
+></div>
+
+<!--  Start of PVPA customization to add color coded request types and priority #s -->
+<!--  Last Edited: 06/12/2012 --- Thom Vreeland -->
+<script src="/scripts/ManualScheduleColorRequest/highlightReqs.js"></script>
+<!-- End of PVPA customization -->
