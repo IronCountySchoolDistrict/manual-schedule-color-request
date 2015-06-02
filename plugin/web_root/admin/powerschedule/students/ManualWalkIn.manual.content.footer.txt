@@ -41,5 +41,5 @@
 
 <!--  Start of PVPA customization to add color coded request types and priority #s -->
 <!--  Last Edited: 06/12/2012 --- Thom Vreeland -->
-<script src="/scripts/ManualScheduleColorRequest/highlightReqs.js"></script>
+<script src="<!-- @echo IMAGE_SERVER_URL -->/scripts/manual-schedule-color-request/highlightReqs.js"></script>
 <!-- End of PVPA customization -->

@@ -1,0 +1,19 @@
+{
+  "name": "manual-schedule-color-request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/manual-schedule-color-request.git"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/manual-schedule-color-request/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/manual-schedule-color-request/find-me#readme"
+}

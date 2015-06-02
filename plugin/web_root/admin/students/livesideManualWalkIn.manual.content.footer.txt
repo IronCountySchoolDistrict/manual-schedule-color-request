@@ -41,5 +41,5 @@
 ></div>
 
 
-<script src="/scripts/ManualScheduleColorRequest/highlightReqs.js"></script>
+<script src="<!-- @echo IMAGE_SERVER_URL -->/scripts/manual-schedule-color-request/highlightReqs.js"></script>
 <!-- End of PVPA customization -->
