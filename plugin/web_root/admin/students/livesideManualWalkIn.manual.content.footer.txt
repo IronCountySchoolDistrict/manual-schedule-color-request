@@ -27,10 +27,10 @@
                     ORDER BY sr.CourseNumber;
                     ]
                     {
-                        "course":"~(course;t)",
-                        "type":"~(groupcode;t)",
-                        "priority":"~(priority;n)",
-                        "alternate":"~(alt;n)"
+                        "course":"~(course;json)",
+                        "type":"~(groupcode;json)",
+                        "priority":"~(priority;json)",
+                        "alternate":"~(alt;json)"
                     },
                     [/tlist_sql]{}
             ],
@@ -41,5 +41,5 @@
 ></div>
 
 
-<script src="<!-- @echo IMAGE_SERVER_URL -->/manual-schedule-color-request/js/highlightReqs.js"></script>
+<script src="/scripts/manual-schedule-color-request/js/highlightReqs.js"></script>
 <!-- End of PVPA customization -->
