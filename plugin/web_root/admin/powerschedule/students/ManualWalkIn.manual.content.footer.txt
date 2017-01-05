@@ -41,5 +41,14 @@
 
 <!--  Start of PVPA customization to add color coded request types and priority #s -->
 <!--  Last Edited: 06/12/2012 --- Thom Vreeland -->
-<script src="/manual-schedule-color-request/js/highlightReqs.js"></script>
+<script>
+    require.config({
+        paths: {
+            color: '/scripts/manual-schedule-color-request/js/highlightReqs'
+        }
+    });
+    require(["color"], function(color){
+        color.default();
+    });
+</script>
 <!-- End of PVPA customization -->
