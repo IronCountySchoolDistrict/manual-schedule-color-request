@@ -47,7 +47,7 @@
             color: '/scripts/manual-schedule-color-request/js/highlightReqs'
         }
     });
-    require(["color"], function(color){
+    require(['color'], function(color){
         color.default();
     });
 </script>

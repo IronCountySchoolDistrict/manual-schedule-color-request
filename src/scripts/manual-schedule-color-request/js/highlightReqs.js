@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-export default function() {
+export default function () {
     $(() => {
         var template = $($('#color-key-template').html());
         var select = $('.box-round');
